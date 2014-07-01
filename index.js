@@ -5,7 +5,7 @@
  * @example fn.curry = curry;
  *          fn.curry( a ).curry( b )( c ); // => fn( a, b, c );
  */
-module.exports.curry = function curry( arg ) {
+module.exports = function curry( arg ) {
     'use strict';
     var fn = this;
     function curried() {
