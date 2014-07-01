@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/AutoSponge/dot-curry.svg)](https://travis-ci.org/AutoSponge/dot-curry)
+
 dot-curry
 =========
 
