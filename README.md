@@ -36,4 +36,3 @@ f.curry( 0 ).curry( 1 ).curry( 2 )(); // 2
 var f0 = f.curry( 0 );
 f0( 1, 2 ); // 2
 ```
-
