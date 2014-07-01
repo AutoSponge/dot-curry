@@ -1,6 +1,6 @@
 {
   "name": "dot-curry",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "non-intrusive, chainable curry function",
   "main": "index.js",
   "directories": {
