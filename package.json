@@ -1,0 +1,46 @@
+{
+  "name": "dot-curry",
+  "version": "0.0.0",
+  "description": "non-intrusive, chainable curry function",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test/*.js",
+    "jshint": "jshint --reporter=node_modules/jshint-stylish/stylish.js *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AutoSponge/dot-curry"
+  },
+  "keywords": [
+    "curry",
+    "functional",
+    "partial application"
+  ],
+  "author": "Paul Grenier <pgrenier@gmail.com> (http://autosponge.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AutoSponge/dot-curry/issues"
+  },
+  "homepage": "https://github.com/AutoSponge/dot-curry",
+  "devDependencies": {
+    "jshint": "^2.5.1",
+    "jshint-stylish": "^0.2.0",
+    "tape": "^2.13.3"
+  },
+  "testling": {
+    "files": "test/*.js",
+    "browsers": [
+      "ie/9..latest",
+      "chrome/14..latest",
+      "firefox/4..latest",
+      "safari/6..latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/4.2..latest"
+    ]
+  }
+}
