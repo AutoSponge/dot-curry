@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/AutoSponge/dot-curry.svg)](https://travis-ci.org/AutoSponge/dot-curry)
+[![browser support](https://ci.testling.com/AutoSponge/dot-curry.png)](https://ci.testling.com/AutoSponge/dot-curry)
 
 dot-curry
 =========
