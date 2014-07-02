@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/AutoSponge/dot-curry.svg?branch=master)](https://travis-ci.org/AutoSponge/dot-curry)
 
+[![browser support](https://ci.testling.com/AutoSponge/dot-curry.png)](http://ci.testling.com/AutoSponge/dot-curry)
+
 dot-curry
 =========
 
