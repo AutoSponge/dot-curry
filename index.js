@@ -15,5 +15,8 @@ module.exports = function curry( arg ) {
         return fn.apply( this, args );
     }
     curried.curry = curry;
+    curried.uncurry = function uncurry() {
+        return fn;
+    };
     return curried;
 };
