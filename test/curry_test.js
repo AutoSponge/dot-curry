@@ -33,5 +33,13 @@ test( 'curry', function ( t ) {
     t.equal( curry.apply( sum, [1] ).curry( 2 )( 3 ), 6, 'curry can chain with the apply pattern' );
 
     t.equal( sumThis.apply( 1, [2, 3] ), 6, 'variadic sumThis works as expected' );
-    t.equal( sumThis.curry( 1 ).curry( 2 ).apply( 3, [4] ), 10, 'curried.apply uses the supplied context' );
+    t.deepEqual( sumThis.curry( 1 ).curry( 2 ).apply( 3, [4] ), 10, 'curried.apply uses the supplied context' );
+} );
+
+test( 'uncurry', function ( t ) {
+    t.plan( 3 );
+
+    t.equal( typeof sum.curry( 1 ).uncurry, 'function', 'uncurry should be a function' );
+    t.equal( sum.curry( 1 ).uncurry(), sum, 'uncurry return the previous function' );
+    t.equal( sum.curry( 1 ).curry( 2 ).uncurry()(), 1, 'uncurry can return an intermediate form' );
 } );
