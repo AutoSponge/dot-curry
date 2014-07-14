@@ -19,6 +19,21 @@ function sumThis() {
 
 sumThis.curry = curry;
 
+function Fubar( foo, bar ) {
+    if ( !(this instanceof Fubar) ) {
+        return Fubar.apply( new Fubar(), arguments );
+    }
+    this.foo = foo;
+    this.bar = bar;
+    return this;
+}
+
+Fubar.prototype.show = function () {
+    return this.foo + ' ' + this.bar;
+};
+
+Fubar.curry = curry;
+
 test( 'curry', function ( t ) {
     t.plan( 10 );
 
@@ -42,4 +57,10 @@ test( 'uncurry', function ( t ) {
     t.equal( typeof sum.curry( 1 ).uncurry, 'function', 'uncurry should be a function' );
     t.equal( sum.curry( 1 ).uncurry(), sum, 'uncurry return the previous function' );
     t.equal( sum.curry( 1 ).curry( 2 ).uncurry()(), 1, 'uncurry can return an intermediate form' );
+} );
+
+test( 'curry new', function ( t ) {
+    t.plan( 1 );
+
+    t.equal( Fubar.curry( 1 )( 2 ).show(), (new Fubar( 1, 2 )).show(), 'curry works with properly guarded constructors' );
 } );
