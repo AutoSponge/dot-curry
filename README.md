@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/AutoSponge/dot-curry.svg?branch=master)](https://travis-ci.org/AutoSponge/dot-curry)
+[![Code Climate](https://codeclimate.com/repos/54cc45bee30ba07e1d007b26/badges/d6b07dd6b940c778662e/gpa.svg)](https://codeclimate.com/repos/54cc45bee30ba07e1d007b26/feed)
+[![Test Coverage](https://codeclimate.com/repos/54cc45bee30ba07e1d007b26/badges/d6b07dd6b940c778662e/coverage.svg)](https://codeclimate.com/repos/54cc45bee30ba07e1d007b26/feed)
 
 [![browser support](https://ci.testling.com/AutoSponge/dot-curry.png)](http://ci.testling.com/AutoSponge/dot-curry)
 
